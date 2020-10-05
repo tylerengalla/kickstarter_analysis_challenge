@@ -1,14 +1,16 @@
-# kickstarter_analysis_challenge
 # Kickstarting with Excel
 
 ## Overview of Project
 
 Performing analysis on Kickstarter data to uncover trends for our 'customer'Louise, who is looking to crowdfund her play write "Fever." She's come close to her goal in a short amount of time but wants to know how similar campaigns fared in relation to 'Launch Date' of their campaign and the 'Funding Goal' they set out to hit. 
 
+---
+
 ### Purpose
 
 To analyze similar campaigns to Louise's so we can understand the impact that 'Launch Date' and 'Goal Amount' has on the success rate of the campaigns.
 
+---
 ## Analysis and Challenges
 
 First, we created a Pivot Table to get a breakout of Theater campaigns and broke them out by their outcome of either 'successful, failed, or canceled.' Then we organized and filtered them by what month they were launched in. 
@@ -31,17 +33,21 @@ We needed to replicate this for the rest of the range amounts and for the differ
 
 We then wanted to convert this into a format that paints us a better picture of what's happening as a result. So we needed to use the =SUM() function in order to get the 'Total Project' count for each funding goal range. We then use simple arithmetic to calculate the percentage of 'Successful, Failed, and Canceled' campaigns based on their goal. 
 
+---
+
 ### Analysis of Outcomes Based on Launch Date
 
-!()(/Theater_Outcomes_vs_Launch.png)
+![](/Theater_Outcomes_vs_Launch.png)
 
 What we found is that summer launch dates, specifically in May and June yield the most successful Theater campaigns that met their funding goal. May led with 111 'successful' campaigns and June with 100. Followed by July with 87. The number of successes steadily decreases as the year goes on with the lowest amount of success coming in December with 37 successful campaigns. 
 
 This could be due to a number of reasons - a hypothesis is that summer is usually a time where families and individuals are looking to have fun, spend money, and be a part of and attend events. And December, our lowest month of 'successful' campaigns is usually a month where money is being directed into things like gifts for Christmas. 
 
+---
+
 ### Analysis of Outcomes Based on Goals
 
-!()(/Outcomes_vs_Goals.png)
+![](/Outcomes_vs_Goals.png)
 
 The next topic Louise wanted us to investigate is how a campaigns 'Funding Goal' or the funding amount they set as their target effected the rate of success. 
 
@@ -49,7 +55,16 @@ From our first take at diving into this, we found no distinguishable trends.
 
 What could be helpful in providing us better insight would've been to calculate the Central Tendencies of this data set and display it in a Box and Whisker plot. This would allow us to understand the distribution of the data in a greater capacity and may allow us to provide Louise with a stronger hypotheses of how Goals effect outcomes. 
 
-However, given the current analysis we did find that the highest percentage of success came with the lowest goal of 'Less than 1000' with 76% chance of success. Another piece of advice we can decipher and share with Louise is that she should not be setting a Goal within the range of '45000 to 49999' as there is 0% chance of campaigns being successful within that goal range. 
+However, given the current analysis we did find that the highest percentage of success came with the lowest goal of 'Less than 1000' with 76% chance of success. 
+Our sample size drastically decreases in terms of Total Projects as we increase our goal amount giving us limited data to make any more strong arguments. 
+
+---
+
+### Conclusions
+
+* Summer is the best time to launch a Theater campaign - with the overall best chance of success coming in the month of May. 
+* December is the worst month to launch a Theater campaign.
+* Goals of 'Less than 1000' give the highest chance of having a successful campaign with 76% of Campaigns being successful within that goal range. 
 
 
 
