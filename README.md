@@ -15,9 +15,13 @@ To analyze similar campaigns to Louise's so we can understand the impact that 'L
 
 First, we created a Pivot Table to get a breakout of Theater campaigns and broke them out by their outcome of either 'successful, failed, or canceled.' Then we organized and filtered them by what month they were launched in. 
 
-In order to do this we need to convert the Unix epoch creation timestamp into a more readable format using the formula =(((J2/60)/60)/24)+DATE(1970,1,1). 
+In order to do this we need to convert the Unix epoch creation timestamp into a more readable format using the formula 
 
-J2 is the 'launched_at' column and the values consist of time stamps that look like this - '143493181.' This is the number of seconds that have elapsed since January 1, 1970. So we divide this by seconds in a minute (60) and then divide it by the number of minutes in an hour (60), then divide by the hours in a day (24). Then add that result with +Date(1970,1,1) which is just adding the time elapsed from the start of the Unix timestamp. 
+=(((J2/60)/60)/24)+DATE(1970,1,1)
+
+* J2 is the 'launched_at' column and the values consist of time stamps that look like this - '143493181.' This is the number of seconds that have elapsed since January 1, 1970. 
+* We then divide this by seconds in a minute (60) and then divide it by the number of minutes in an hour (60), then divide by the hours in a day (24). 
+* Next, we add that result with +Date(1970,1,1) which is just adding the time elapsed from the start of the Unix timestamp. 
 
 Then we needed to group the 'Launch Dates' by month so we can see any trends and identify the best month to launch through a line graph. 
 
@@ -27,7 +31,14 @@ In order to execute on this we needed to create a new tab where we used the =COU
 
 So we create the ranges of 'Goals' starting with 'Less than 1000,' then created bucketed ranges in $5000 incremenets that eventually ended with 'Greater than 50000.' First order is to break these out by the Number of Successful Campaigns, Number of Failed, and Number of Canceled Campaigns that had a funding goal less than 1000. 
 
-The formula to achieve this reads =COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays"). Using this function allows us to Count the number of times that we see a certain result. So we say count the number of times we see funding less than 1000 on the Kickstarter tab - Kickstarter!$D:$D,"<1000", that was categorized as 'successful' - Kickstarter!$F:$F,"successful", and that was part of the subcategory "plays" - Kickstarter!$R:$R,"plays". 
+The formula to achieve this reads 
+
+=COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")
+
+* Using this function allows us to Count the number of times that we see a certain result. 
+* So we say count the number of times we see funding less than 1000 on the Kickstarter tab - Kickstarter!$D:$D,"<1000", 
+* that was categorized as 'successful' - Kickstarter!$F:$F,"successful", 
+* and that was part of the subcategory "plays" - Kickstarter!$R:$R,"plays". 
 
 We needed to replicate this for the rest of the range amounts and for the different results we wanted to tally up. 
 
