@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-Performing analysis on Kickstarter data to uncover trends for our 'customer'Louise, who is looking to crowdfund her play write "Fever." She's come close to her goal in a short amount of time but wants to know how similar campaigns fared in relation to 'Launch Date' of their campaign and the 'Funding Goal' they set out to hit. 
+Performing analysis on Kickstarter data to uncover trends for our client Louise, who is looking to crowdfund her play write "Fever." She's come close to her goal in a short amount of time but wants to know how similar campaigns fared in relation to 'Launch Date' of their campaign and the 'Funding Goal' they set out to hit. 
 
 ---
 
