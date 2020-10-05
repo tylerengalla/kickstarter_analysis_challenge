@@ -67,7 +67,7 @@ From our first take at diving into this, we found no distinguishable trends.
 What could be helpful in providing us better insight would've been to calculate the Central Tendencies of this data set and display it in a Box and Whisker plot. This would allow us to understand the distribution of the data in a greater capacity and may allow us to provide Louise with a stronger hypotheses of how Goals effect outcomes. 
 
 However, given the current analysis we did find that the highest percentage of success came with the lowest goal of 'Less than 1000' with 76% chance of success. 
-Our sample size drastically decreases in terms of Total Projects as we increase our goal amount giving us limited data to make any more strong arguments. 
+Our sample size drastically decreases in terms of Total Projects as we increase our goal amount giving us limited data to make any more conclusive and strong arguments. 
 
 ---
 
