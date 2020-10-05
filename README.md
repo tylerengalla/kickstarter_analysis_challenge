@@ -33,7 +33,7 @@ We then wanted to convert this into a format that paints us a better picture of 
 
 ### Analysis of Outcomes Based on Launch Date
 
-!()(/images/Theater_Outcomes_vs_Launch.png)
+!()(/Theater_Outcomes_vs_Launch.png)
 
 What we found is that summer launch dates, specifically in May and June yield the most successful Theater campaigns that met their funding goal. May led with 111 'successful' campaigns and June with 100. Followed by July with 87. The number of successes steadily decreases as the year goes on with the lowest amount of success coming in December with 37 successful campaigns. 
 
@@ -41,7 +41,7 @@ This could be due to a number of reasons - a hypothesis is that summer is usuall
 
 ### Analysis of Outcomes Based on Goals
 
-!()(images/Outcomes_vs_Goals.png)
+!()(/Outcomes_vs_Goals.png)
 
 The next topic Louise wanted us to investigate is how a campaigns 'Funding Goal' or the funding amount they set as their target effected the rate of success. 
 
