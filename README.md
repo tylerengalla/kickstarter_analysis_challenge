@@ -31,7 +31,7 @@ In order to execute on this we needed to create a new tab where we used the =COU
 
 So we create the ranges of 'Goals' starting with 'Less than 1000,' then created bucketed ranges in $5000 incremenets that eventually ended with 'Greater than 50000.' First order is to break these out by the Number of Successful Campaigns, Number of Failed, and Number of Canceled Campaigns that had a funding goal less than 1000. 
 
-The formula to achieve this reads 
+The formula used to achieve this is below:  
 
 =COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")
 
